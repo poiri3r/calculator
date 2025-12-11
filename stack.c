@@ -3,7 +3,7 @@
 #include "stack.h"
 #include <string.h>
 
-printf("hello world")
+printf("hello world");
 Stack * create_stack(int initial_size)
 {
 	Stack * s = (Stack *)malloc(sizeof(Stack));
@@ -74,5 +74,6 @@ static void reallocate(Stack * stack)
 	free(stack->contents);
 	stack->contents = tmp;
 }
+
 
 
